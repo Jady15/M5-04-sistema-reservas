@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Reservas de Restaurante</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Reservas de Restaurante</h1>
+    <form id="reservation-form">
+        <label for="nombreCliente">Nombre del Cliente:</label>
+        <input type="text" id="nombreCliente" required>
+        <label for="mesasSolicitadas">Número de Mesas:</label>
+        <input type="number" id="mesasSolicitadas" min="1" required>
+        <button type="submit">Hacer Reserva</button>
+    </form>
+    <div id="result-container"></div>
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,100 @@
+ /* Estilo general */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8ece0;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Título */
+h1 {
+    color: #5c2d1e; 
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+/* Formulario */
+#reservation-form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    max-width: 400px;
+}
+
+#reservation-form label {
+    font-size: 1rem;
+    color: #333;
+}
+
+#reservation-form input {
+    padding: 8px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#reservation-form button {
+    background-color: #5c2d1e;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#reservation-form button:hover {
+    background-color: #7a3b2e;
+}
+
+/* Contenedor de resultados */
+#result-container {
+    margin-top: 20px;
+    width: 100%;
+    max-width: 400px;
+}
+
+#result-container p {
+    padding: 10px;
+    border-radius: 5px;
+    margin: 5px 0;
+}
+
+#result-container .info {
+    background-color: #fff3cd;
+    color: #856404;
+}
+
+#result-container .success {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+#result-container .error {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    #reservation-form {
+        padding: 15px;
+    }
+
+    #reservation-form input, #reservation-form button {
+        font-size: 0.9rem;
+    }
+}
